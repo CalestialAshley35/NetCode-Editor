@@ -10,6 +10,8 @@ You can code of the NetCode Editor at: [https://netcode-editor.glitch.me/](https
 - **Download Options**: Download your work as a complete HTML file or just the HTML portion.
 - **Customizable Editor**: Adjust the text colors for each code panel (HTML, CSS, JavaScript) to fit your preferences.
 - **Responsive Design**: Works well on various devices with a clean and modern interface.
+- **Syntax Highlighting**: its have Syntax Highlights to easy to read your codes.
+- **Line Numbering**: You can have lines to your code
 
 ## Usage
 1. **Write Your Code**: 
