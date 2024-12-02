@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+}
+
+.editor-container {
+    display: flex;
+    flex: 1;
+    border-bottom: 1px solid #444;
+}
+
+.editor-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.editor-panel h2 {
+    margin-bottom: 10px;
+    color: #61dafb;
+    display: flex;
+    align-items: center;
+}
+
+.editor-panel h2 .fa-download {
+    margin-left: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #61dafb;
+}
+
+textarea {
+    flex: 1;
+    background-color: #282c34;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.output-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.output-container h2 {
+    margin-bottom: 10px;
+    color: #61dafb;
+}
+
+.output {
+    flex: 1;
+    border: 1px solid #444;
+    background-color: white;
+}
+
+.button-container {
+    text-align: center;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+.settings-btn, .network-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+.settings-btn:hover, .network-btn:hover {
+    background-color: #666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.modal label {
+    color: #61dafb;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal input[type="color"] {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.modal button {
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: #21a1f1;
+  }
