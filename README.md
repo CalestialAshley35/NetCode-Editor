@@ -2,9 +2,6 @@
 
 Welcome to **NetCode Editor**! This is a simple live code editor where you can write and test HTML, CSS, and JavaScript in real-time. The application provides a user-friendly interface, allowing users to see their changes instantly in an output frame. You can also download your code as an HTML file for easy sharing and use.
 
-## Website 
-You can code of the NetCode Editor at: [https://netcode-editor.glitch.me/](https://netcode-editor.glitch.me/)
-
 ## Features
 - **Real-Time Preview**: See your HTML, CSS, and JavaScript code executed in real-time.
 - **Download Options**: Download your work as a complete HTML file or just the HTML portion.
@@ -41,13 +38,6 @@ The code for NetCode Editor is structured as follows:
 - **HTML**: For the structure of the editor.
 - **CSS**: For styling and layout.
 - **JavaScript**: For interactivity and real-time code execution.
-
-## Installation
-To run your own instance of the NetCode Editor:
-
-1. Clone this repository or download the source code.
-2. Open the `index.html` file in your preferred web browser.
-3. For a live environment, consider using platforms like Glitch or GitHub Pages.
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes.
