@@ -34,21 +34,20 @@ body {
     align-items: center;
 }
 
-.editor-panel h2 .fa-download {
-    margin-left: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    color: #61dafb;
-}
-
 textarea {
     flex: 1;
     background-color: #282c34;
-    color: white;
-    border: 1px solid #444;
+    color:#ffffff;
+    border: none;
     padding: 10px;
-    font-size: 14px;
     resize: none;
+    font-size: 16px;
+    font-family: Consolas, monospace;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #61dafb;
 }
 
 .output-container {
@@ -57,6 +56,7 @@ textarea {
     flex-direction: column;
     padding: 10px;
     background-color: #1e1e1e;
+    border-top: 1px solid #444;
 }
 
 .output-container h2 {
@@ -66,44 +66,65 @@ textarea {
 
 .output {
     flex: 1;
-    border: 1px solid #444;
+    width: 100%;
+    border: none;
     background-color: white;
 }
 
 .button-container {
-    text-align: center;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 button {
     padding: 10px 20px;
+    margin: 5px;
     background-color: #61dafb;
-    color: white;
     border: none;
-    cursor: pointer;
+    color: white;
     font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #21a1f1;
 }
 
-.settings-btn, .network-btn {
+.settings-btn,
+.network-btn,
+.upload-btn {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    top: 10px;
     background-color: #444;
     color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
+    cursor: pointer;
 }
 
-.settings-btn:hover, .network-btn:hover {
-    background-color: #666;
+.settings-btn {
+    right: 130px;
+}
+
+.network-btn {
+    right: 70px;
+}
+
+.upload-btn {
+    right: 10px;
+}
+
+.settings-btn:hover,
+.network-btn:hover,
+.upload-btn:hover {
+    background-color: #61dafb;
 }
 
 .modal {
@@ -113,44 +134,40 @@ button:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
     background-color: #1e1e1e;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    width: 300px;
 }
 
-.modal h2 {
-    margin-bottom: 20px;
-    color: #61dafb;
-}
-
-.modal label {
-    color: #61dafb;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.modal input[type="color"] {
-    padding: 5px;
-    margin-bottom: 20px;
-}
-
-.modal button {
-    padding: 10px 20px;
-    background-color: #61dafb;
-    color: white;
+.modal-content input[type="color"] {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
 }
 
-.modal button:hover {
+.modal-content button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
     background-color: #21a1f1;
-  }
+    }
