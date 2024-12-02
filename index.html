@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code Editor</title>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="editor-panel">
+            <h2>HTML <i class="fas fa-download" id="download-html"></i></h2>
+            <textarea id="html-code"></textarea>
+        </div>
+        <div class="editor-panel">
+            <h2>CSS</h2>
+            <textarea id="css-code"></textarea>
+        </div>
+        <div class="editor-panel">
+            <h2>JavaScript</h2>
+            <textarea id="js-code"></textarea>
+        </div>
+    </div>
+    <div class="output-container">
+        <h2>Output</h2>
+        <iframe id="output" class="output"></iframe>
+    </div>
+
+    <div class="button-container">
+        <button id="download-btn">Download Full HTML File</button>
+    </div>
+
+    <button class="settings-btn" id="settings-btn">Settings</button>
+    <button class="network-btn" id="network-btn" style="bottom: 20px; left: 120px;">Networking</button>
+
+    <div class="modal" id="settings-modal">
+        <div class="modal-content">
+            <h2>Editor Settings</h2>
+            <label for="html-color">HTML Text Color</label>
+            <input type="color" id="html-color" value="#ffffff">
+
+            <label for="css-color">CSS Text Color</label>
+            <input type="color" id="css-color" value="#ffffff">
+
+            <label for="js-color">JavaScript Text Color</label>
+            <input type="color" id="js-color" value="#ffffff">
+
+            <button id="save-settings">Save Settings</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
